@@ -3,7 +3,7 @@ import "./app.scss";
 import Home from "./pages/home";
 import Company from "./pages/company";
 import Contact from "./pages/contact";
-import Locataions from "./pages/locations";
+import Locations from "./pages/locations";
 import Web from "./pages/web-design";
 import AppDesign from "./pages/app-design";
 import Graphic from "./pages/graphic-design";
@@ -13,9 +13,13 @@ import Footer from "./components/footer/footer";
 function App() {
   return (
     <Routes>
-      <Route>
-        <Route />
+      <Route path='/' element={<Navbar/>}>
+        <Route index element = {<Home/>} />
+        <Route path='/company' element={<Company/>} />
+        <Route path='/locations' element={<Locations/>} />
       </Route>
+      
+    
     </Routes>
   );
 }
