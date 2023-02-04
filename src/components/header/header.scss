@@ -1,0 +1,49 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+
+.header {
+  height: 100vh;
+//   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-color: $peach;
+  border-radius: 15px;
+ 
+
+    &_container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding-left: 5rem;
+    }
+
+    &__container-left{
+        padding-top: 10rem;
+    }
+
+    &__heading{
+        color:$white;
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+        
+    }
+
+
+        &__par {
+            color: $white;
+            font-size: 1.5rem;
+            width: 80%;
+            
+
+        }
+
+        &__container-right{
+            margin-left: 5rem;
+        }
+
+        &__img{
+           
+            object-fit: cover;  
+
+        }
+
+}
