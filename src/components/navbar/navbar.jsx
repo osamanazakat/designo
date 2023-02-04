@@ -17,8 +17,8 @@ const Navbar = () => {
         <div
           className={`navbar__links ${isNavbarShowing ? "show-navbar" : ""}`}
         >
-          <Link className="navbar__link" to="/company">
-            company
+          <Link className="navbar__link" to="/ourcompany">
+            our company
           </Link>
           <Link className="navbar__link" to="/locations">
             locations
