@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 button {
   background: none;
   outline: none;
@@ -47,7 +51,7 @@ button {
   font-family: "Jost", sans-serif;
 }
 
-.cantainer {
+.container {
   width: 90%;
   margin-inline: auto;
 

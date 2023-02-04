@@ -1,26 +1,29 @@
 import { Route, Routes } from "react-router-dom";
-import "./app.scss";
 import Home from "./pages/home";
 import Company from "./pages/company";
 import Contact from "./pages/contact";
 import Locations from "./pages/locations";
-import Web from "./pages/web-design";
+import WebDesign from "./pages/web-design";
 import AppDesign from "./pages/app-design";
-import Graphic from "./pages/graphic-design";
+import GraphicDesign from "./pages/graphic-design";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Navbar/>}>
-        <Route index element = {<Home/>} />
-        <Route path='/company' element={<Company/>} />
-        <Route path='/locations' element={<Locations/>} />
-      </Route>
-      
-    
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/webdesign" element={<WebDesign />} />
+        <Route path="/appdesign" element={<AppDesign />} />
+        <Route path="/graphicdesign" element={<GraphicDesign />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

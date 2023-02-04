@@ -1,0 +1,72 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.navbar {
+  height: 10rem;
+  display: grid;
+  align-content: center;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 22rem;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $black;
+      width: 100%;
+      padding-block: 2rem;
+      gap: 2rem;
+      display: none;
+    }
+  }
+
+  &__link {
+    font-size: 2rem;
+    color: $black;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include respond(phone) {
+      color: $white;
+      margin-left: 3%;
+    }
+  }
+
+  &__btns {
+    display: none;
+
+    @include respond(phone) {
+      display: flex;
+    }
+  }
+
+  &__btn {
+    outline: none;
+    display: inline-block;
+    border: none;
+    font-size: 3rem;
+    color: $dark-gray;
+  }
+}
+
+.show-navbar {
+  display: flex;
+}
