@@ -1,0 +1,65 @@
+@import "./styles/mixins.scss";
+@import "./styles/variables.scss";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%;
+
+  @include respond(tab-port) {
+    font-size: 56.25%; // 1rem = 9px, 10px/16px = 56.25%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 1rem = 8px, 10px/16px = 50%;
+  }
+
+  @include respond(desktop) {
+    font-size: 75%; // 1rem = 12px, 10px/16px = 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  outline: none;
+  display: inline-block;
+  border: none;
+  font-family: "Jost", sans-serif;
+}
+
+.cantainer {
+  width: 90%;
+  margin-inline: auto;
+
+  @include respond(tab-port) {
+    width: 94%;
+  }
+
+  @include respond(phone) {
+    width: 96%;
+  }
+
+  @include respond(desktop) {
+    width: 80%;
+  }
+}
