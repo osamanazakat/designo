@@ -67,6 +67,8 @@
   }
 }
 
-.show-navbar {
-  display: flex;
+@include respond(phone) {
+  .show-navbar {
+    display: flex;
+  }
 }

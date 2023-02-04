@@ -11,13 +11,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container navbar__container">
-        <Link to="/" onClick={() => setIsNavbarShowing(!isNavbarShowing)}>
+        <Link to="/" onClick={() => setIsNavbarShowing(false)}>
           <img src={Logo} alt="logo" className="navbar__logo" />
         </Link>
         <div
           className={`navbar__links ${isNavbarShowing ? "show-navbar" : ""}`}
         >
-          <Link className="navbar__link" to="/ourcompany">
+          <Link className="navbar__link" to="/company">
             our company
           </Link>
           <Link className="navbar__link" to="/locations">
