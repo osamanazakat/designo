@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.scss";
 import HeroImage from "../../../assets/home/desktop/image-hero-phone.png";
+import Button from "../../button/button";
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
+          <Button text="Learn More" className="white" />
         </div>
         <div className="header__container-right">
           <img className="header__img" src={HeroImage} alt="Hero-Image" />

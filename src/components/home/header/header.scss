@@ -41,6 +41,7 @@
   &__par {
     color: $white;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
     @include respond(phone) {
       font-size: 2rem;
     }
