@@ -1,14 +1,39 @@
-.services_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@import "../../../styles/variables.scss";
 
-  &__container-right {
+.services {
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+
+  &__container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    column-gap: 3rem;
   }
 
-  &__left-web {
-    // background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");
-    background-color: pink;
+  &__container-left {
+    background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__p {
+    color: $white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
   }
 }
