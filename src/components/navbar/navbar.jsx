@@ -17,13 +17,25 @@ const Navbar = () => {
         <div
           className={`navbar__links ${isNavbarShowing ? "show-navbar" : ""}`}
         >
-          <Link className="navbar__link" to="/ourcompany">
+          <Link
+            className="navbar__link"
+            to="/company"
+            onClick={() => setIsNavbarShowing(false)}
+          >
             our company
           </Link>
-          <Link className="navbar__link" to="/locations">
+          <Link
+            className="navbar__link"
+            to="/locations"
+            onClick={() => setIsNavbarShowing(false)}
+          >
             locations
           </Link>
-          <Link className="navbar__link" to="/contact">
+          <Link
+            className="navbar__link"
+            to="/contact"
+            onClick={() => setIsNavbarShowing(false)}
+          >
             contact
           </Link>
         </div>

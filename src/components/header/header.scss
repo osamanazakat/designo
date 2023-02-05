@@ -1,49 +1,54 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 
-
 .header {
-  height: 100vh;
-//   background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
+  height: 80vh;
+  background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
   background-color: $peach;
   border-radius: 15px;
- 
+  overflow: hidden;
 
-    &_container {
+  &_container {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-left: 5rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      text-align: center;
     }
+  }
 
-    &__container-left{
-        padding-top: 10rem;
+  &__container-left {
+    padding-top: 10rem;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
     }
+  }
 
-    &__heading{
-        color:$white;
-        font-size: 4rem;
-        line-height: 1;
-        margin-bottom: 2rem;
-        
+  &__par {
+    color: $white;
+    font-size: 1.5rem;
+    @include respond(phone) {
+      font-size: 2rem;
     }
+  }
 
-
-        &__par {
-            color: $white;
-            font-size: 1.5rem;
-            width: 80%;
-            
-
-        }
-
-        &__container-right{
-            margin-left: 5rem;
-        }
-
-        &__img{
-           
-            object-fit: cover;  
-
-        }
-
+  &__img {
+    width: 100%;
+    @include respond(tab-port) {
+      transform: translateY(-10%);
+    }
+  }
 }
