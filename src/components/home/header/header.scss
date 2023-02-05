@@ -1,15 +1,16 @@
-@import "../../styles/mixins.scss";
-@import "../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
 
 .header {
   height: 80vh;
-  background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
   background-color: $peach;
   border-radius: 15px;
   overflow: hidden;
+  margin-bottom: 10rem;
 
   &_container {
     display: grid;

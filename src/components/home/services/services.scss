@@ -1,0 +1,14 @@
+.services_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__container-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &__left-web {
+    // background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");
+    background-color: pink;
+  }
+}

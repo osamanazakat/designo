@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import HeroImage from "../../assets/home/desktop/image-hero-phone.png";
+import HeroImage from "../../../assets/home/desktop/image-hero-phone.png";
 
 function Header() {
   return (
