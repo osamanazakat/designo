@@ -1,24 +1,31 @@
 import "./services.scss";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <section className="services">
       <div className="container services__container">
-        <div className="services__container-left">
+        <Link className="services__container-left" to="/webdesign">
           <div className="services__left-web">
             <h1 className="services__heading">Web Design</h1>
-            <p className="services__p">View Projects</p>
+            <p className="services__p">
+              View Projects <span className="services__arrow">&gt;</span>
+            </p>
           </div>
-        </div>
+        </Link>
         <div className="services__container-right">
-          <div className="services__top-app">
+          <Link className="services__top-app" to="/appdesign">
             <h1 className="services__heading">App Design</h1>
-            <p className="services__p">View Projects</p>
-          </div>
-          <div className="services__bottom-graphic">
+            <p className="services__p">
+              View Projects <span className="services__arrow">&gt;</span>
+            </p>
+          </Link>
+          <Link className="services__bottom-graphic" to="graphicdesign">
             <h1 className="services__heading">Graphic Design</h1>
-            <p className="services__p">View Projects</p>
-          </div>
+            <p className="services__p">
+              View Projects <span className="services__arrow">&gt;</span>
+            </p>
+          </Link>
         </div>
       </div>
     </section>
