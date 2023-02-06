@@ -2,7 +2,7 @@
 @import "../../../styles/variables.scss";
 
 .header {
-  height: 100vh;
+  height: 80vh;
   background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -10,6 +10,10 @@
   background-color: $peach;
   border-radius: 15px;
   overflow: hidden;
+
+  @include respond(desktop) {
+    height: 100vh;
+  }
 
   &_container {
     display: grid;

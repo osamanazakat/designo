@@ -1,4 +1,5 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
 
 .services {
   padding-top: 10rem;
@@ -7,8 +8,19 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: 80vh;
     column-gap: 2rem;
+
+    @include respond(desktop) {
+      height: 100vh;
+    }
+    @include respond(tab-port) {
+      height: 60vh;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
   }
 
   &__container-left {
