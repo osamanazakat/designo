@@ -1,0 +1,17 @@
+.features__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+
+  &__feature {
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    border-radius: 100rem;
+  }
+}
