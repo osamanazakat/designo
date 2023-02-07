@@ -1,5 +1,5 @@
 import "./cta.scss";
-import Button from "../button/button";
+import Button from "../../button/button";
 import { Link } from "react-router-dom";
 
 const Cta = () => {
