@@ -31,9 +31,11 @@ const Features = () => {
         {features.map(({ id, title, desc, img }) => {
           return (
             <div key={id} className="features__feature">
-              <img className="feature__img" src={img} />
+              <div className="features__img-container">
+                <img className="features__img" src={img} />
+              </div>
               <h2 className="features__title">{title}</h2>
-              <p className="feature__p">{desc}</p>
+              <p className="features__p">{desc}</p>
             </div>
           );
         })}
