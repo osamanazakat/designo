@@ -15,6 +15,10 @@
     height: 100vh;
   }
 
+  @include respond(phone) {
+    height: 100vh;
+  }
+
   &_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
