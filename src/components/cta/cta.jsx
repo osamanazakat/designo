@@ -1,5 +1,5 @@
 import "./cta.scss";
-import Button from "../../button/button";
+import Button from "../button/button";
 import { Link } from "react-router-dom";
 
 const Cta = () => {
@@ -13,7 +13,7 @@ const Cta = () => {
             how our expertise can help your business grow.
           </p>
         </div>
-        <Link className="cta__button-container" to="/contact">
+        <Link className="cta__btn-container" to="/contact">
           <Button text="get in touch" className="white" />
         </Link>
       </div>
