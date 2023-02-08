@@ -32,6 +32,7 @@
       padding-block: 2rem;
       gap: 2rem;
       display: none;
+      z-index: 10;
 
       animation: navbarAnimation 0.7s ease;
     }
