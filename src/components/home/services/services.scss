@@ -20,6 +20,7 @@
     @include respond(phone) {
       grid-template-columns: 1fr;
       row-gap: 2rem;
+      height: 70vh;
     }
   }
 

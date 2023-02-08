@@ -1,12 +1,7 @@
 import "./button.scss";
-import { Link } from "react-router-dom";
 
 const Button = ({ text, className }) => {
-  return (
-    <Link to="/company">
-      <button className={`btn ${className}`}>{text}</button>
-    </Link>
-  );
+  return <button className={`btn ${className}`}>{text}</button>;
 };
 
 export default Button;

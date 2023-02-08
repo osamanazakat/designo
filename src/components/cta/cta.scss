@@ -3,6 +3,10 @@
 
 .cta {
   transform: translateY(-50%);
+  margin-top: 20rem;
+  @include respond(phone) {
+    margin-top: 25rem;
+  }
 
   &__container {
     display: flex;
