@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/variables.scss";
+
+.services-example-item {
+  &__container {
+    border-radius: 2rem;
+  }
+
+  &:hover {
+    border: 1px;
+    border-color: $peach;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100%;
+    height: 60%;
+  }
+}
