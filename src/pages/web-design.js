@@ -12,37 +12,49 @@ const WebDesign = () => {
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Blogr} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Blogr} alt="this is an image" />
+      ),
       par: "XXX",
     },
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Builder} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Builder} alt="this is an image" />
+      ),
       par: "XXX",
     },
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Camp} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Camp} alt="this is an image" />
+      ),
       par: "XXX",
     },
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Express} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Express} alt="this is an image" />
+      ),
       par: "XXX",
     },
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Photon} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Photon} alt="this is an image" />
+      ),
       par: "XXX",
     },
     {
       id: 1,
       title: "BLOGR",
-      image: <img src={Transfer} alt="this is an image" />,
+      image: (
+        <img style={{ width: "100%" }} src={Transfer} alt="this is an image" />
+      ),
       par: "XXX",
     },
   ];

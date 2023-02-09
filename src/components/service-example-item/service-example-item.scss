@@ -7,7 +7,7 @@
   }
 
   &__image {
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 1rem;
     &:hover {
       border: 0.5px solid $peach;
