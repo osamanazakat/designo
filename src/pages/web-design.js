@@ -15,47 +15,47 @@ const WebDesign = () => {
       image: (
         <img style={{ width: "100%" }} src={Blogr} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "Blogr is a platform for creating an online blog or publication",
     },
     {
       id: 1,
-      title: "BLOGR",
+      title: "BUILDER",
       image: (
         <img style={{ width: "100%" }} src={Builder} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "Connects users with local contractors based on their location",
     },
     {
       id: 1,
-      title: "BLOGR",
+      title: "CAMP",
       image: (
         <img style={{ width: "100%" }} src={Camp} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "Get expert training in coding, data, design and digital marketing",
     },
     {
       id: 1,
-      title: "BLOGR",
+      title: "EXPRESS",
       image: (
         <img style={{ width: "100%" }} src={Express} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "A multi-carrier shipping website for ecommerce businesses",
     },
     {
       id: 1,
-      title: "BLOGR",
+      title: "PHOTON",
       image: (
         <img style={{ width: "100%" }} src={Photon} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "A state-of-the-art music player with high-resolution audio and DSP effects",
     },
     {
       id: 1,
-      title: "BLOGR",
+      title: "TRANSFER",
       image: (
         <img style={{ width: "100%" }} src={Transfer} alt="this is an image" />
       ),
-      par: "XXX",
+      par: "Site for low-cost money transfers and sending money within seconds",
     },
   ];
 

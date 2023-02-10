@@ -7,8 +7,8 @@ const ServicesExampleItem = ({ serviceExample }) => {
     <div className="services-example-item">
       <div className="services-example-item__image">{image}</div>
       <div className="services-example-item__body-container">
-        <h2>{title}</h2>
-        <p>{par}</p>
+        <h2 className="services-example-item__heading">{title}</h2>
+        <p className="services-example-item__par">{par}</p>
       </div>
     </div>
   );
