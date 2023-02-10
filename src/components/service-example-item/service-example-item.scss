@@ -1,14 +1,24 @@
 @import "../../styles/variables.scss";
-@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .services-example-item {
-  &:hover {
-    cursor: pointer;
-    background-color: $peach;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: $light-peach-1;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  @include respond(tab-port) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
   }
 
-  &__image {
-    border-top-left-radius: 1rem;
+  &:hover {
+    background-color: $peach;
+    color: $white;
   }
 
   &__body-container {
@@ -29,5 +39,12 @@
     margin-inline: auto;
     color: $black;
     padding-bottom: 3rem;
+  }
+
+  &:hover h2 {
+    color: $white;
+  }
+  &:hover p {
+    color: $white;
   }
 }

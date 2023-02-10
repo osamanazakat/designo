@@ -5,10 +5,7 @@ const ServicesExamples = ({ ServicesExamplesData }) => {
   return (
     <section className="services-examples-container container">
       {ServicesExamplesData.map((serviceExample) => (
-        <ServicesExampleItem
-          key={serviceExample.id}
-          serviceExample={serviceExample}
-        />
+        <ServicesExampleItem serviceExample={serviceExample} />
       ))}
     </section>
   );
