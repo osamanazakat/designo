@@ -3,6 +3,7 @@ import ServicesExamples from "../components/services-examples/services-example";
 import BoxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import Change from "../assets/graphic-design/desktop/image-change.jpg";
 import Science from "../assets/graphic-design/desktop/image-science.jpg";
+import Services from "../components/services/services";
 
 const GraphicDesign = () => {
   const ServicesExamplesData = [
@@ -32,6 +33,7 @@ const GraphicDesign = () => {
         par="We deliver eye-catching branding materials that are tailored to meet your business objectives"
       />
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <Services selectedService={"graphicdesign"} />
     </>
   );
 };

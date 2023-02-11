@@ -1,5 +1,5 @@
-@import "../../../styles/variables.scss";
-@import "../../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .services {
   padding-top: 10rem;
@@ -7,7 +7,7 @@
 
   &__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 80vh;
     column-gap: 2rem;
 
@@ -16,6 +16,7 @@
     }
     @include respond(tab-port) {
       height: 60vh;
+      grid-template-columns: 1fr 1fr;
     }
     @include respond(phone) {
       grid-template-columns: 1fr;
@@ -24,8 +25,9 @@
     }
   }
 
-  &__container-left {
-    background-image: url("../../../assets/home/desktop/image-web-design-large.jpg");
+  &__web-design,
+  &__app-design,
+  &__graphic-design {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -52,50 +54,16 @@
     }
   }
 
-  &__left-web {
-    z-index: 10;
+  &__web-design {
+    background-image: url("../../assets/home/desktop/image-web-design-large.jpg");
   }
 
-  &__top-app,
-  &__bottom-graphic {
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1rem;
-    display: grid;
-    place-content: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    &::before {
-      z-index: 9;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: $black;
-      opacity: 50%;
-      transition: all 0.7s;
-    }
-    &:hover::before {
-      background-color: $peach;
-    }
+  &__app-design {
+    background-image: url("../../assets/home/desktop/image-app-design.jpg");
   }
 
-  &__container-right {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 2rem;
-  }
-
-  &__top-app {
-    background-image: url("../../../assets/home/desktop/image-app-design.jpg");
-  }
-
-  &__bottom-graphic {
-    background-image: url("../../../assets/home/desktop/image-graphic-design.jpg");
+  &__graphic-design {
+    background-image: url("../../assets/home/desktop/image-graphic-design.jpg");
   }
 
   &__heading {

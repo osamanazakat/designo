@@ -5,6 +5,7 @@ import Eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import Faceit from "../assets/app-design/desktop/image-faceit.jpg";
 import Loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
 import Todo from "../assets/app-design/desktop/image-todo.jpg";
+import Services from "../components/services/services";
 
 const AppDesign = () => {
   const ServicesExamplesData = [
@@ -46,8 +47,8 @@ const AppDesign = () => {
         heading="App Design"
         par="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
-      ;
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <Services selectedService={"appdesign"} />
     </>
   );
 };
