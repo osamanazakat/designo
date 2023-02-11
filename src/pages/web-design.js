@@ -6,6 +6,7 @@ import Camp from "../assets/web-design/desktop/image-camp.jpg";
 import Express from "../assets/web-design/desktop/image-express.jpg";
 import Photon from "../assets/web-design/desktop/image-photon.jpg";
 import Transfer from "../assets/web-design/desktop/image-transfer.jpg";
+import Services from "../components/services/services";
 
 const WebDesign = () => {
   const ServicesExamplesData = [
@@ -67,6 +68,7 @@ const WebDesign = () => {
       />
       ;
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <Services selectedService={"webdesign"} />
     </>
   );
 };

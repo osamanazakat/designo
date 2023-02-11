@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.services {
+  padding-top: 10rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+    column-gap: 2rem;
+
+    @include respond(desktop) {
+      height: 100vh;
+    }
+    @include respond(tab-port) {
+      height: 60vh;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+      height: 70vh;
+    }
+  }
+}
+
+.services-web-design,
+.services-app-design,
+.services-graphic-design {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  &::before {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 50%;
+    transition: all 0.7s;
+  }
+  &:hover::before {
+    background-color: $peach;
+  }
+}
+
+.services__web-design {
+  background-image: url("../../assets/home/desktop/image-web-design-large.jpg");
+}
+
+.services__app-design {
+  background-image: url("../../assets/home/desktop/image-app-design.jpg");
+}
+
+.services__graphic-design {
+  background-image: url("../../assets/home/desktop/image-graphic-design.jpg");
+}
+
+.services__heading {
+  z-index: 30;
+  color: $white;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.services__p {
+  z-index: 30;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.services__arrow {
+  color: $peach;
+  font-weight: 500;
+  font-size: 1rem;
+}
