@@ -1,4 +1,4 @@
-import LocationsSection from "../components/locations-section/locations-section";
+import LocationsSection from "../components/locations/locations-section/locations-section";
 
 const contact = () => {
   return (

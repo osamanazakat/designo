@@ -2,7 +2,7 @@ import CompanySections from "../components/company/company-sections/company-sect
 import Image1 from "../assets/about/desktop/image-about-hero.jpg";
 import Image2 from "../assets/about/desktop/image-real-deal.jpg";
 import Image3 from "../assets/about/desktop/image-world-class-talent.jpg";
-import LocationsSection from "../components/locations-section/locations-section";
+import LocationsSection from "../components/locations/locations-section/locations-section";
 
 const company = () => {
   return (

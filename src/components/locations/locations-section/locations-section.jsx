@@ -1,8 +1,8 @@
-import Button from "../button/button";
+import Button from "../../button/button";
 import { Link } from "react-router-dom";
-import Img1 from "../../assets/shared/desktop/illustration-canada.svg";
-import Img2 from "../../assets/shared/desktop/illustration-australia.svg";
-import Img3 from "../../assets/shared/desktop/illustration-united-kingdom.svg";
+import Img1 from "../../../assets/shared/desktop/illustration-canada.svg";
+import Img2 from "../../../assets/shared/desktop/illustration-australia.svg";
+import Img3 from "../../../assets/shared/desktop/illustration-united-kingdom.svg";
 
 import "./locations-section.scss";
 
