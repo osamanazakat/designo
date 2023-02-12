@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.locations-section {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 3.5rem;
+    row-gap: 7rem;
+  }
+
+  &__feature {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: $dark-gray;
+    margin-block: 3rem 2rem;
+  }
+
+  &__p {
+    font-size: 2rem;
+    color: $dark-gray;
+  }
+
+  &__img-container {
+    position: relative;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: linear-gradient(to right, $light-peach, $white);
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      opacity: 70%;
+    }
+  }
+
+  &__img {
+    width: 90%;
+    position: relative;
+  }
+}

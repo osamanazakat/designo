@@ -5,6 +5,9 @@
   margin-bottom: 10rem;
   @include respond(tab-port) {
     margin-bottom: 0;
+    &:nth-child(4) {
+      margin-bottom: 10rem;
+    }
   }
 
   &__container {

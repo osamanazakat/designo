@@ -2,6 +2,7 @@ import CompanySections from "../components/company/company-sections/company-sect
 import Image1 from "../assets/about/desktop/image-about-hero.jpg";
 import Image2 from "../assets/about/desktop/image-real-deal.jpg";
 import Image3 from "../assets/about/desktop/image-world-class-talent.jpg";
+import LocationsSection from "../components/locations-section/locations-section";
 
 const company = () => {
   return (
@@ -27,6 +28,7 @@ const company = () => {
         desc2="We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results."
         image={Image2}
       />
+      <LocationsSection />
     </>
   );
 };
