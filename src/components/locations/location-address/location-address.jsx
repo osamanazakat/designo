@@ -1,8 +1,15 @@
 import "./location-address.scss";
 
-const LocationAddress = ({ address, heading, phone, email, image, office }) => {
+const LocationAddress = ({
+  address,
+  heading,
+  phone,
+  email,
+  className,
+  office,
+}) => {
   return (
-    <section className="location-address">
+    <section className={`location-address ${className}`}>
       <div className="location-address__container container">
         <div className="location-address__left">
           <h1 className="location-address__heading">{heading}</h1>
@@ -18,9 +25,7 @@ const LocationAddress = ({ address, heading, phone, email, image, office }) => {
             </div>
           </div>
         </div>
-        <div className="location-address__right">
-          <img src={image} alt="" className="location-address__img" />
-        </div>
+        <div className="location-address__right"></div>
       </div>
     </section>
   );
