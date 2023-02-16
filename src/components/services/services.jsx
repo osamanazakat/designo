@@ -1,7 +1,7 @@
 import "./services.scss";
 import { Link } from "react-router-dom";
 
-const Services = ({ selectedService }) => {
+const Services = ({ selectedService, className }) => {
   const Links = [
     {
       id: "webDesign",
@@ -43,7 +43,7 @@ const Services = ({ selectedService }) => {
 
   return (
     <section className="services">
-      <div className="container services__container">
+      <div className={`container services__container ${className}`}>
         {selectedService === "home" &&
           Links.map(({ id, text, url }) => (
             <Link key={id} to={url}>

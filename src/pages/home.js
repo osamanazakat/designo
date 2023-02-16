@@ -7,7 +7,7 @@ const home = () => {
   return (
     <>
       <Header />
-      <Services selectedService={"home"} />
+      <Services selectedService={"home"} className={"homeStyle"} />
       <Features />
     </>
   );
