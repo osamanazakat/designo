@@ -1,7 +1,4 @@
 import LocationAddress from "../components/locations/location-address/location-address";
-import Img1 from "../assets/locations/desktop/image-map-canada.png";
-import Img2 from "../assets/locations/desktop/image-map-australia.png";
-import Img3 from "../assets/locations/desktop/image-map-united-kingdom.png";
 
 const Locations = () => {
   return (
