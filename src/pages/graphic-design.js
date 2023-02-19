@@ -4,6 +4,7 @@ import BoxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import Change from "../assets/graphic-design/desktop/image-change.jpg";
 import Science from "../assets/graphic-design/desktop/image-science.jpg";
 import Services from "../components/services/services";
+import { Link } from "react-router-dom";
 
 const GraphicDesign = () => {
   const ServicesExamplesData = [
@@ -33,7 +34,14 @@ const GraphicDesign = () => {
         par="We deliver eye-catching branding materials that are tailored to meet your business objectives"
       />
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
-      <Services selectedService={"graphicdesign"} />
+      <div className=" container services">
+        <Link to="/appdesign">
+          <Services heading="App Design" className="appImage" />
+        </Link>
+        <Link to="/webdesign">
+          <Services heading="Web Design" className="webImage" />
+        </Link>
+      </div>
     </>
   );
 };

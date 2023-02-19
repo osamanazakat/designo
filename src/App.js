@@ -3,7 +3,7 @@ import Home from "./pages/home/home";
 import Company from "./pages/company";
 import Contact from "./pages/contact";
 import Locations from "./pages/locations";
-import WebDesign from "./pages/web-design";
+import WebDesign from "./pages/web-design/web-design";
 import AppDesign from "./pages/app-design";
 import GraphicDesign from "./pages/graphic-design";
 import Navbar from "./components/navbar/navbar";

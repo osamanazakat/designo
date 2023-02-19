@@ -3,6 +3,7 @@ import Header from "../../components/home/header/header";
 import Services from "../../components/services/services";
 import Features from "../../components/home/features/features";
 import "./home.scss";
+import { Link } from "react-router-dom";
 
 const home = () => {
   return (
@@ -10,14 +11,20 @@ const home = () => {
       <Header />
       <div className=" container services">
         <div className="services-left">
-          <Services heading="Web Design" className="webImage" />
+          <Link to="/webdesign">
+            <Services heading="Web Design" className="webImage" />
+          </Link>
         </div>
         <div className="services-right">
           <div className="services-right-top">
-            <Services heading="App Design" className="appImage" />
+            <Link to="/appdesign">
+              <Services heading="App Design" className="appImage" />
+            </Link>
           </div>
           <div className="services-right-bottom">
-            <Services heading="Graphic Design" className="graphicImage" />
+            <Link to="/graphicdesign">
+              <Services heading="Graphic Design" className="graphicImage" />
+            </Link>
           </div>
         </div>
       </div>

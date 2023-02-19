@@ -1,5 +1,4 @@
 import "./services.scss";
-import { Link } from "react-router-dom";
 
 const Services = ({ heading, className }) => {
   return (
