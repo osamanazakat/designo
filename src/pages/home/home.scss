@@ -1,0 +1,15 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.services-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+}
+
+.services-left {
+  grid-row: 1 / span 2;
+}

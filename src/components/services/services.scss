@@ -1,28 +1,23 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-.services {
-  padding-block: 10rem;
+// .services {
+//   padding-block: 10rem;
 
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
+//   &__container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     column-gap: 2rem;
+//     row-gap: 2rem;
 
-    @include respond(phone) {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-    }
-  }
-}
+//     @include respond(phone) {
+//       grid-template-columns: 1fr;
+//       row-gap: 2rem;
+//     }
+//   }
+// }
 
-.homeStyle {
-}
-
-.services__web-design,
-.services__app-design,
-.services__graphic-design {
+.service {
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,19 +54,19 @@
   }
 }
 
-.services__web-design {
+.webImage {
   background-image: url("../../assets/home/desktop/image-web-design-large.jpg");
 }
 
-.services__app-design {
+.appImage {
   background-image: url("../../assets/home/desktop/image-app-design.jpg");
 }
 
-.services__graphic-design {
+.graphicImage {
   background-image: url("../../assets/home/desktop/image-graphic-design.jpg");
 }
 
-.services__heading {
+.heading {
   z-index: 30;
   color: $white;
   font-size: 3.5rem;
@@ -81,7 +76,7 @@
   margin-bottom: 1.5rem;
 }
 
-.services__p {
+.par {
   z-index: 30;
   display: flex;
   gap: 1.5rem;

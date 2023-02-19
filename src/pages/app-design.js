@@ -48,7 +48,10 @@ const AppDesign = () => {
         par="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
-      <Services selectedService={"appdesign"} />
+      <div className="service">
+        <Services heading="Web Design" className="WebImage" />
+        <Services heading="Graphic Design" className="GraphicImage" />
+      </div>
     </>
   );
 };
