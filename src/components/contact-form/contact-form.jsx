@@ -1,7 +1,6 @@
 import "./contact-form.scss";
 import { useState } from "react";
 import Button from "../button/button";
-import { init, send } from "emailjs-com";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -13,23 +12,27 @@ const ContactForm = () => {
     event.preventDefault();
     const messageBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`;
 
-    send("service_2hhnfsc", "template_d0oijj8", {
-      from_name: name,
-      message_html: messageBody,
-      reply_to: email,
-    }).then(
-      (response) => {
-        console.log("Email sent:", response.status, response.text);
-        // Clear the form fields
-        setName("");
-        setEmail("");
-        setPhone("");
-        setMessage("");
-      },
-      (error) => {
-        console.error("Error sending email:", error);
-      }
-    );
+    // This is the mock email sender
+    console.log("Submitting message...");
+
+    // Set a timeout of 5 seconds
+    const timeout = setTimeout(() => {
+      console.error("Error: Took too long to submit the message");
+    }, 5000);
+
+    // Simulate submitting the message
+    setTimeout(() => {
+      console.log("Mock email sent with the following message:", messageBody);
+
+      // Clear the form fields
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+
+      // Clear the timeout
+      clearTimeout(timeout);
+    }, 2000);
   };
 
   return (
