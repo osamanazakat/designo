@@ -1,6 +1,6 @@
-import "./services.scss";
+import "./service.scss";
 
-const Services = ({ heading, className }) => {
+const Service = ({ heading, className }) => {
   return (
     <div className={`service ${className}`}>
       <h1 className="heading">{heading}</h1>
@@ -12,7 +12,7 @@ const Services = ({ heading, className }) => {
   );
 };
 
-export default Services;
+export default Service;
 
 // const Links = [
 //   {
