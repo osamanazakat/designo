@@ -1,0 +1,19 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  padding-block: 10rem;
+  height: 100%;
+}
+
+.services-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  height: 100%;
+}
+
+.services-left {
+  height: 100%;
+}

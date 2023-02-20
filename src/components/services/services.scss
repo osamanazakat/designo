@@ -1,22 +1,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-// .services {
-//   padding-block: 10rem;
-
-//   &__container {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     column-gap: 2rem;
-//     row-gap: 2rem;
-
-//     @include respond(phone) {
-//       grid-template-columns: 1fr;
-//       row-gap: 2rem;
-//     }
-//   }
-// }
-
 .service {
   height: 60vh;
   background-repeat: no-repeat;
@@ -56,6 +40,7 @@
 
 .webImage {
   background-image: url("../../assets/home/desktop/image-web-design-large.jpg");
+  background-size: cover;
 }
 
 .appImage {

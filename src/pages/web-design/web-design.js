@@ -1,12 +1,13 @@
-import ServicesHero from "../components/services-hero/services-hero";
-import ServicesExamples from "../components/services-examples/services-example";
-import Blogr from "../assets/web-design/desktop/image-blogr.jpg";
-import Builder from "../assets/web-design/desktop/image-builder.jpg";
-import Camp from "../assets/web-design/desktop/image-camp.jpg";
-import Express from "../assets/web-design/desktop/image-express.jpg";
-import Photon from "../assets/web-design/desktop/image-photon.jpg";
-import Transfer from "../assets/web-design/desktop/image-transfer.jpg";
-import Services from "../components/services/services";
+import ServicesHero from "../../components/services-hero/services-hero";
+import ServicesExamples from "../../components/services-examples/services-example";
+import Blogr from "../../assets/web-design/desktop/image-blogr.jpg";
+import Builder from "../../assets/web-design/desktop/image-builder.jpg";
+import Camp from "../../assets/web-design/desktop/image-camp.jpg";
+import Express from "../../assets/web-design/desktop/image-express.jpg";
+import Photon from "../../assets/web-design/desktop/image-photon.jpg";
+import Transfer from "../../assets/web-design/desktop/image-transfer.jpg";
+import Services from "../../components/services/services";
+import { Link } from "react-router-dom";
 
 const WebDesign = () => {
   const ServicesExamplesData = [
@@ -68,7 +69,14 @@ const WebDesign = () => {
       />
       ;
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
-      <Services selectedService={"webdesign"} />
+      <div className=" container services">
+        <Link to="/appdesign">
+          <Services heading="App Design" className="appImage" />
+        </Link>
+        <Link to="/graphicdesign">
+          <Services heading="Graphic Design" className="graphicImage" />
+        </Link>
+      </div>
     </>
   );
 };

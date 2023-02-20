@@ -6,6 +6,7 @@ import Faceit from "../assets/app-design/desktop/image-faceit.jpg";
 import Loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
 import Todo from "../assets/app-design/desktop/image-todo.jpg";
 import Services from "../components/services/services";
+import { Link } from "react-router-dom";
 
 const AppDesign = () => {
   const ServicesExamplesData = [
@@ -48,9 +49,13 @@ const AppDesign = () => {
         par="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
-      <div className="service">
-        <Services heading="Web Design" className="WebImage" />
-        <Services heading="Graphic Design" className="GraphicImage" />
+      <div className=" container services">
+        <Link to="/webdesign">
+          <Services heading="Web Design" className="webImage" />
+        </Link>
+        <Link to="/graphicdesign">
+          <Services heading="Graphic Design" className="graphicImage" />
+        </Link>
       </div>
     </>
   );
