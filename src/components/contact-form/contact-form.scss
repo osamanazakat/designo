@@ -12,6 +12,14 @@
     background-color: $peach;
     padding: 4rem 5rem;
     border-radius: 1rem;
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 3rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      padding: 4rem 1rem;
+    }
   }
   &__left {
     color: $white;
