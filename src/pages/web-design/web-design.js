@@ -6,7 +6,7 @@ import Camp from "../../assets/web-design/desktop/image-camp.jpg";
 import Express from "../../assets/web-design/desktop/image-express.jpg";
 import Photon from "../../assets/web-design/desktop/image-photon.jpg";
 import Transfer from "../../assets/web-design/desktop/image-transfer.jpg";
-import Services from "../../components/services/services";
+import Service from "../../components/service-category/service";
 import { Link } from "react-router-dom";
 
 const WebDesign = () => {
@@ -71,10 +71,10 @@ const WebDesign = () => {
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
       <div className=" container services">
         <Link to="/appdesign">
-          <Services heading="App Design" className="appImage" />
+          <Service heading="App Design" className="appImage" />
         </Link>
         <Link to="/graphicdesign">
-          <Services heading="Graphic Design" className="graphicImage" />
+          <Service heading="Graphic Design" className="graphicImage" />
         </Link>
       </div>
     </>

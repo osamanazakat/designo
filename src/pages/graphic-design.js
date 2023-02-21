@@ -3,7 +3,7 @@ import ServicesExamples from "../components/services-examples/services-example";
 import BoxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import Change from "../assets/graphic-design/desktop/image-change.jpg";
 import Science from "../assets/graphic-design/desktop/image-science.jpg";
-import Services from "../components/services/services";
+import Service from "../components/service-category/service";
 import { Link } from "react-router-dom";
 
 const GraphicDesign = () => {
@@ -36,10 +36,10 @@ const GraphicDesign = () => {
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
       <div className=" container services">
         <Link to="/appdesign">
-          <Services heading="App Design" className="appImage" />
+          <Service heading="App Design" className="appImage" />
         </Link>
         <Link to="/webdesign">
-          <Services heading="Web Design" className="webImage" />
+          <Service heading="Web Design" className="webImage" />
         </Link>
       </div>
     </>

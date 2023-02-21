@@ -5,7 +5,7 @@ import Eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import Faceit from "../assets/app-design/desktop/image-faceit.jpg";
 import Loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
 import Todo from "../assets/app-design/desktop/image-todo.jpg";
-import Services from "../components/services/services";
+import Service from "../components/service-category/service";
 import { Link } from "react-router-dom";
 
 const AppDesign = () => {
@@ -51,10 +51,10 @@ const AppDesign = () => {
       <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
       <div className=" container services">
         <Link to="/webdesign">
-          <Services heading="Web Design" className="webImage" />
+          <Service heading="Web Design" className="webImage" />
         </Link>
         <Link to="/graphicdesign">
-          <Services heading="Graphic Design" className="graphicImage" />
+          <Service heading="Graphic Design" className="graphicImage" />
         </Link>
       </div>
     </>
