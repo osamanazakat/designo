@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../components/home/header/header";
-import Service from "../../components/service-category/service";
-import Features from "../../components/home/features/features";
-import "./home.scss";
+import Header from "../components/home/header/header";
+import Service from "../components/service-category/service";
+import Features from "../components/home/features/features";
+import "../styles/service-categories-section.scss";
 import { Link } from "react-router-dom";
 
 const home = () => {

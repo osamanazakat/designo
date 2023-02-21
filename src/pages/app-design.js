@@ -1,5 +1,5 @@
 import ServicesHero from "../components/services-hero/services-hero";
-import ServicesExamples from "../components/services-examples/services-example";
+import CatMenu from "../components/category-menu/category-menu";
 import Airfilter from "../assets/app-design/desktop/image-airfilter.jpg";
 import Eyecam from "../assets/app-design/desktop/image-eyecam.jpg";
 import Faceit from "../assets/app-design/desktop/image-faceit.jpg";
@@ -7,9 +7,10 @@ import Loopstudios from "../assets/app-design/desktop/image-loopstudios.jpg";
 import Todo from "../assets/app-design/desktop/image-todo.jpg";
 import Service from "../components/service-category/service";
 import { Link } from "react-router-dom";
+import "../styles/service-categories-section.scss";
 
 const AppDesign = () => {
-  const ServicesExamplesData = [
+  const menuItems = [
     {
       id: 7,
       title: "AIRFILTER",
@@ -48,7 +49,7 @@ const AppDesign = () => {
         heading="App Design"
         par="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."
       />
-      <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <CatMenu menuItems={menuItems} />
       <div className=" container services">
         <Link to="/webdesign">
           <Service heading="Web Design" className="webImage" />

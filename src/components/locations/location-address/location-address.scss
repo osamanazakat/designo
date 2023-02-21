@@ -26,9 +26,6 @@
 
   &__left {
     background-color: $light-peach-1;
-    width: max-content;
-    width: 100%;
-    height: 100%;
     padding: 5rem;
     border-radius: 2rem;
 
@@ -45,7 +42,6 @@
 
   &__right {
     background-image: url("../../../assets/locations/desktop/image-map-canada.png");
-    width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;

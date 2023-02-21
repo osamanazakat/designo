@@ -1,16 +1,17 @@
-import ServicesHero from "../../components/services-hero/services-hero";
-import ServicesExamples from "../../components/services-examples/services-example";
-import Blogr from "../../assets/web-design/desktop/image-blogr.jpg";
-import Builder from "../../assets/web-design/desktop/image-builder.jpg";
-import Camp from "../../assets/web-design/desktop/image-camp.jpg";
-import Express from "../../assets/web-design/desktop/image-express.jpg";
-import Photon from "../../assets/web-design/desktop/image-photon.jpg";
-import Transfer from "../../assets/web-design/desktop/image-transfer.jpg";
-import Service from "../../components/service-category/service";
+import ServicesHero from "../components/services-hero/services-hero";
+import CatMenu from "../components/category-menu/category-menu";
+import Blogr from "../assets/web-design/desktop/image-blogr.jpg";
+import Builder from "../assets/web-design/desktop/image-builder.jpg";
+import Camp from "../assets/web-design/desktop/image-camp.jpg";
+import Express from "../assets/web-design/desktop/image-express.jpg";
+import Photon from "../assets/web-design/desktop/image-photon.jpg";
+import Transfer from "../assets/web-design/desktop/image-transfer.jpg";
+import Service from "../components/service-category/service";
 import { Link } from "react-router-dom";
+import "../styles/service-categories-section.scss";
 
 const WebDesign = () => {
-  const ServicesExamplesData = [
+  const menuItems = [
     {
       id: 1,
       title: "BLOGR",
@@ -68,7 +69,7 @@ const WebDesign = () => {
         par="We build websites that serve as powerful marketing tools and bring memorable brand experiences"
       />
       ;
-      <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <CatMenu menuItems={menuItems} />
       <div className=" container services">
         <Link to="/appdesign">
           <Service heading="App Design" className="appImage" />

@@ -1,13 +1,14 @@
 import ServicesHero from "../components/services-hero/services-hero";
-import ServicesExamples from "../components/services-examples/services-example";
+import CatMenu from "../components/category-menu/category-menu";
 import BoxedWater from "../assets/graphic-design/desktop/image-boxed-water.jpg";
 import Change from "../assets/graphic-design/desktop/image-change.jpg";
 import Science from "../assets/graphic-design/desktop/image-science.jpg";
 import Service from "../components/service-category/service";
 import { Link } from "react-router-dom";
+import "../styles/service-categories-section.scss";
 
 const GraphicDesign = () => {
-  const ServicesExamplesData = [
+  const menuItems = [
     {
       id: 12,
       title: "BOXED WATER",
@@ -33,7 +34,7 @@ const GraphicDesign = () => {
         heading="Graphic Design"
         par="We deliver eye-catching branding materials that are tailored to meet your business objectives"
       />
-      <ServicesExamples ServicesExamplesData={ServicesExamplesData} />
+      <CatMenu menuItems={menuItems} />
       <div className=" container services">
         <Link to="/appdesign">
           <Service heading="App Design" className="appImage" />

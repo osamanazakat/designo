@@ -1,7 +1,7 @@
-import "./service-example-item.scss";
+import "./menu-item.scss";
 
-const ServicesExampleItem = ({ serviceExample }) => {
-  const { image, title, par, id } = serviceExample;
+const MenuItem = ({ item }) => {
+  const { image, title, par, id } = item;
 
   return (
     <div className="services-example-item" key={id}>
@@ -14,4 +14,4 @@ const ServicesExampleItem = ({ serviceExample }) => {
   );
 };
 
-export default ServicesExampleItem;
+export default MenuItem;
